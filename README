@@ -1,0 +1,30 @@
+makeCSS plugin for Sublime Text 2
+=================================
+
+Usage:
+* Clone https://github.com/ksgy/makeCSS & config it to your needs
+* Download and copy "makeCSS-sublime" folder to Sublime's Packages/User.
+* Add a hotkey definition to User keymap file, like this:
+
+[{
+  "keys": [
+    "ctrl+shift+c"
+  ],
+  "args": {"args": "python /path/to/sublime/package/folder/Packages/User/makeCSS/makecss.py "},
+  "command": "makecss",
+
+...
+
+----------------------------------
+
+By default the whole file will be parsed if no selected text. If HTML code is selected then that is passed to makeCSS.
+
+Have fun!
+
+----------------------------------
+
+TODO: error handling if the selection is not valid html code.
+
+----------------------------------
+
+License: do whatever you want :)
